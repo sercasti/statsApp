@@ -1,6 +1,3 @@
-buildHeatMap();
-
-
 url = 'https://6ine6u27z5.execute-api.us-east-1.amazonaws.com/default/getStatsForMoment';
 
 fetch(url)
@@ -9,4 +6,5 @@ fetch(url)
   })
   .then((data) => {
     buildCount(data);
+    buildHeatMap(data);
   });

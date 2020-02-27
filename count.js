@@ -1,5 +1,4 @@
 function buildCount(inputData){
-    console.log(inputData);
     var results = inputData.totalResults.results;
 
     var videoLabels = [];
@@ -28,5 +27,5 @@ function buildCount(inputData){
         title: 'Videos Total Views %'
     };
     
-    Plotly.newPlot('count', data, layout, {staticPlot: true});
+    Plotly.newPlot('count', data, layout, {displayModeBar: false, responsive:true});
 }
