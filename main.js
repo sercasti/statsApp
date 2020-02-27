@@ -1,4 +1,3 @@
-buildCount();
 buildHeatMap();
 
 
@@ -9,5 +8,5 @@ fetch(url)
     return response.json();
   })
   .then((data) => {
-    console.log(data);
+    buildCount(data);
   });
